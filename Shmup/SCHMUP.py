@@ -109,9 +109,9 @@ class Player(pygame.sprite.Sprite):
             self.rect.bottom = HEIGHT - 10
         self.speedx = 0
         keystate = pygame.key.get_pressed()
-        if keystate[pygame.K_a]:
+        if keystate[pygame.K_LEFT]:
             self.speedx = -8
-        if keystate[pygame.K_d]:
+        if keystate[pygame.K_RIGHT]:
             self.speedx = 8
         if keystate[pygame.K_SPACE]:
             self.shoot()
